@@ -1,0 +1,38 @@
+{
+  "name": "iso-room-schema",
+  "version": "1.0.0",
+  "description": "Portable renderer-neutral schema for tile-based isometric rooms",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.22.0",
+  "files": ["dist", "docs", "schema", "fixtures", "README.md", "LICENSE"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./schema": "./schema/layout-v1.schema.json",
+    "./fixtures/*": "./fixtures/*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "docs": "typedoc --out docs src/index.ts"
+  },
+  "dependencies": {
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.1.0",
+    "typedoc": "0.28.8",
+    "typescript": "5.8.3",
+    "vitest": "3.2.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

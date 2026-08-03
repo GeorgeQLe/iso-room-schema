@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0.0", "metadata": { "id": "bad.asset", "title": "Unknown asset" },
+  "grid": { "width": 2, "height": 2, "tileWidth": 64, "tileHeight": 32 }, "assets": [],
+  "rooms": [{ "id": "r", "name": "R", "floorRegionIds": ["f"] }],
+  "floors": [{ "id": "f", "roomId": "r", "tiles": [{ "x": 0, "y": 0 }, { "x": 1, "y": 0 }] }],
+  "walls": [], "openings": [],
+  "entities": [{ "id": "e", "name": "Ghost", "assetId": "missing", "roomId": "r", "position": { "x": 1, "y": 0 }, "footprint": { "width": 1, "height": 1 }, "rotation": 0, "elevation": 0, "collision": true }],
+  "zones": [], "spawnPoints": [{ "id": "s", "name": "S", "roomId": "r", "position": { "x": 0, "y": 0 } }],
+  "navigation": { "allowDiagonal": false }
+}

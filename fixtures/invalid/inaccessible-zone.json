@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0.0", "metadata": { "id": "bad.zone", "title": "Zone" },
+  "grid": { "width": 2, "height": 2, "tileWidth": 64, "tileHeight": 32 }, "assets": [],
+  "rooms": [{ "id": "r", "name": "R", "floorRegionIds": ["f"] }],
+  "floors": [{ "id": "f", "roomId": "r", "tiles": [{ "x": 0, "y": 0 }, { "x": 1, "y": 0 }] }],
+  "walls": [], "openings": [], "entities": [],
+  "zones": [{ "id": "z", "name": "Outside", "roomId": "r", "tiles": [{ "x": 1, "y": 1 }], "accessible": true }],
+  "spawnPoints": [{ "id": "s", "name": "S", "roomId": "r", "position": { "x": 0, "y": 0 } }],
+  "navigation": { "allowDiagonal": false }
+}

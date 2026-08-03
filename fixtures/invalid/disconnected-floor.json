@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0.0", "metadata": { "id": "bad.floor", "title": "Disconnected" },
+  "grid": { "width": 3, "height": 1, "tileWidth": 64, "tileHeight": 32 }, "assets": [],
+  "rooms": [{ "id": "r", "name": "R", "floorRegionIds": ["f"] }],
+  "floors": [{ "id": "f", "roomId": "r", "tiles": [{ "x": 0, "y": 0 }, { "x": 2, "y": 0 }] }],
+  "walls": [], "openings": [], "entities": [], "zones": [],
+  "spawnPoints": [{ "id": "s", "name": "S", "roomId": "r", "position": { "x": 0, "y": 0 } }],
+  "navigation": { "allowDiagonal": false }
+}

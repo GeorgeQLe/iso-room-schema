@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0.0",
+  "metadata": { "id": "fixture.rotation", "title": "Rotated furniture" },
+  "grid": { "width": 3, "height": 3, "tileWidth": 64, "tileHeight": 32 },
+  "assets": [{ "id": "sofa", "name": "Sofa", "kind": "procedural", "footprint": { "width": 2, "height": 1 } }],
+  "rooms": [{ "id": "r", "name": "Room", "floorRegionIds": ["f"] }],
+  "floors": [{ "id": "f", "roomId": "r", "tiles": [{ "x": 0, "y": 0 }, { "x": 1, "y": 0 }, { "x": 2, "y": 0 }, { "x": 0, "y": 1 }, { "x": 1, "y": 1 }, { "x": 2, "y": 1 }, { "x": 0, "y": 2 }, { "x": 1, "y": 2 }, { "x": 2, "y": 2 }] }],
+  "walls": [], "openings": [],
+  "entities": [{ "id": "sofa.1", "name": "Sofa", "assetId": "sofa", "roomId": "r", "position": { "x": 1, "y": 0 }, "footprint": { "width": 2, "height": 1 }, "rotation": 90, "elevation": 0, "collision": true }],
+  "zones": [], "spawnPoints": [{ "id": "s", "name": "Spawn", "roomId": "r", "position": { "x": 0, "y": 0 } }],
+  "navigation": { "allowDiagonal": true, "preventCornerCutting": true }
+}

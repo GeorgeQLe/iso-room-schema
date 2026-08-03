@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0.0", "metadata": { "id": "bad.navigation", "title": "Blocked route" },
+  "grid": { "width": 3, "height": 1, "tileWidth": 64, "tileHeight": 32 },
+  "assets": [{ "id": "block", "name": "Block", "kind": "procedural", "footprint": { "width": 1, "height": 1 } }],
+  "rooms": [{ "id": "r", "name": "R", "floorRegionIds": ["f"] }],
+  "floors": [{ "id": "f", "roomId": "r", "tiles": [{ "x": 0, "y": 0 }, { "x": 1, "y": 0 }, { "x": 2, "y": 0 }] }],
+  "walls": [], "openings": [],
+  "entities": [{ "id": "b", "name": "Block", "assetId": "block", "roomId": "r", "position": { "x": 1, "y": 0 }, "footprint": { "width": 1, "height": 1 }, "rotation": 0, "elevation": 0, "collision": true }],
+  "zones": [], "spawnPoints": [{ "id": "s", "name": "S", "roomId": "r", "position": { "x": 0, "y": 0 } }],
+  "navigation": { "allowDiagonal": false }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "metadata": { "id": "fixture.basic", "title": "Basic room" },
+  "grid": { "width": 4, "height": 4, "tileWidth": 256, "tileHeight": 128 },
+  "theme": "procedural",
+  "assets": [
+    { "id": "chair", "name": "Chair", "kind": "procedural", "footprint": { "width": 1, "height": 1 }, "collision": true }
+  ],
+  "rooms": [{ "id": "room", "name": "Room", "floorRegionIds": ["floor"] }],
+  "floors": [{
+    "id": "floor", "roomId": "room", "material": "checker",
+    "tiles": [
+      { "x": 0, "y": 0 }, { "x": 1, "y": 0 }, { "x": 2, "y": 0 }, { "x": 3, "y": 0 },
+      { "x": 0, "y": 1 }, { "x": 1, "y": 1 }, { "x": 2, "y": 1 }, { "x": 3, "y": 1 },
+      { "x": 0, "y": 2 }, { "x": 1, "y": 2 }, { "x": 2, "y": 2 }, { "x": 3, "y": 2 },
+      { "x": 0, "y": 3 }, { "x": 1, "y": 3 }, { "x": 2, "y": 3 }, { "x": 3, "y": 3 }
+    ]
+  }],
+  "walls": [{ "id": "wall.north", "roomId": "room", "tile": { "x": 0, "y": 0 }, "direction": "north" }],
+  "openings": [{ "id": "door", "wallId": "wall.north", "kind": "door", "passable": true }],
+  "entities": [{
+    "id": "chair.1", "name": "Chair", "assetId": "chair", "roomId": "room",
+    "position": { "x": 2, "y": 2 }, "footprint": { "width": 1, "height": 1 },
+    "rotation": 90, "elevation": 0, "collision": true,
+    "extensions": { "pixi.iso-room": { "tint": "#de7d4a" }, "three.iso-room": { "material": "oak" } }
+  }],
+  "zones": [{ "id": "zone.entry", "name": "Entry", "roomId": "room", "tiles": [{ "x": 0, "y": 0 }], "accessible": true }],
+  "spawnPoints": [{ "id": "spawn", "name": "Entry", "roomId": "room", "position": { "x": 0, "y": 0 }, "rotation": 90 }],
+  "navigation": { "allowDiagonal": false, "preventCornerCutting": true }
+}
