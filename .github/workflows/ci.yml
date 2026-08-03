@@ -15,4 +15,4 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm test
       - run: pnpm build
-      - run: pnpm docs
+      - run: pnpm run docs
