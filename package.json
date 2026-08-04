@@ -1,8 +1,19 @@
 {
   "name": "iso-room-schema",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.1",
   "description": "Portable renderer-neutral schema for tile-based isometric rooms",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeQLe/iso-room-schema.git"
+  },
+  "homepage": "https://github.com/GeorgeQLe/iso-room-schema#readme",
+  "bugs": {
+    "url": "https://github.com/GeorgeQLe/iso-room-schema/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "packageManager": "pnpm@10.22.0",
   "files": ["dist", "docs", "schema", "fixtures", "README.md", "LICENSE"],
@@ -20,7 +31,8 @@
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "docs": "typedoc --out docs src/index.ts"
+    "docs": "typedoc --out docs src/index.ts",
+    "pack:check": "node scripts/check-package.mjs"
   },
   "dependencies": {
     "ajv": "8.17.1",

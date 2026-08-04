@@ -4,6 +4,9 @@ Renderer-neutral TypeScript types, JSON Schema, validation, migration plumbing,
 canonical serialization, fixtures, and a downstream conformance runner for
 single-level tile-based isometric room games.
 
+> The current package version is `1.0.0-rc.1`. Install the release candidate
+> with `npm install iso-room-schema@1.0.0-rc.1` after it is published.
+
 ```ts
 import {
   parseLayout,
@@ -42,3 +45,7 @@ business concepts.
 
 Run `pnpm test`, `pnpm build`, and `pnpm docs`. Generated TypeDoc output is complete
 for every public API exported from `src/index.ts`.
+
+Run `pnpm pack:check` before publishing. It builds the package, verifies the
+tarball allowlist, installs that tarball into an isolated consumer, compiles a
+TypeScript import, and executes a runtime import.
